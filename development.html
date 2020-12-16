@@ -1,0 +1,386 @@
+<head>
+
+    <title>Rooster Run</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" type="img/jpg" href="assets/logoroost.png"/>
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="myheader" style="background-color: red !important;">
+        <div class="container d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white " style="background-color: red !important;">
+            <h5 class="my-0 mr-md-auto font-weight-normal">
+                <a href="index.html"><img src="assets/logoRoosterRunNew.png" alt=""></a>
+            </h5>
+            <nav class="my-2 my-md-0 mr-md-3 ">
+              <a class="p-2 text-decoration-none" href="index.html">Home</a>
+              <a class="p-2 btn btn-warning" href="development.html">Development Blog</a>
+              <a class="p-2 text-decoration-none" href="gallery.html">Gallery</a>
+              <a class="p-2 text-decoration-none download-button" href="download.html">Download</a>
+            </nav>
+          </div>
+    </div>
+
+    
+
+    <div class="container mb-5"  style="margin-top : 140px  !important;">
+        <h3>Development Blog</h3>
+      
+        <h4>About the Project</h4>
+		<p>ROOSTER RUN is a fun multiplayer game, soon available on IOS, Andriod and Windows.</p>
+        <div class="row">
+          <div class="col-md-8">
+		  <p><b><u>
+			UPDATE 4.0.0
+			</b></u>
+			<br>
+			<ul>
+				<b>ADDITIONS</b>
+					<ul><li>2 new maps created (levels: beginner and hard) using Tiled Map Editor.</li></ul>
+					<ul><li>Added background texture</li></ul>
+					<ul><li>Game finished screen when game finishes, triggered by a plane at end of map.</li></ul>
+					<ul><li>New texture graphics added to Tiled maps. (ground, flowers, plane , tractor, clouds)</li></ul>
+					<ul><li>Coins and Lightning objects have a circular shape.</li></ul>
+				<b>MODIFICATIONS</b>
+					<ul><li>Mud does not dissapear when Rooster collides with it.</li></ul>
+				<b>TO DO</b>
+					<ul><li>Create a map for intermediate.</li></ul>
+			</ul>
+            </p>
+		  <p><b><u>
+			UPDATE 3.3.1
+			</b></u>
+			<br>
+			<ul>
+				<b>ADDITIONS</b>
+					<ul><li>Each player has seperate HUDs.</li></ul>
+				<b>TO DO</b>	
+					<ul><li>Issues deleting Bodies (TNT, Mud, Lighting).</li></ul>
+					<ul><li>X coordinate and packet X of rooster breaks after struck by Lighting.</li></ul>
+			</ul>
+            </p>
+		  <p><b><u>
+			UPDATE 3.3.0
+			</b></u>
+			<br>
+			<ul>
+				<b>ADDITIONS</b>
+					<ul><li>Merged Current Hack with Multiplayer Functionality.</li></ul>
+				<b>MODIFICATIONS</b>
+					<ul><li>Player2 functionality changed input to HandleInput.</li></ul>
+					<ul><li>Updated WorldContactListener method to check which player interacts with what.</li></ul>
+				<b>MISC</b>	
+					<ul><li>The HUD updates for all Roosters instead of individual Roosters.</li></ul>
+					<ul><li>Power ups assigned to the other Roosters instead of the Rooster that collects it.</li></ul>
+					<ul><li>Issues with deleting bodies (TNT, lighting, mud) for player 2.</li></ul>
+			</ul>
+            </p>
+		  <p><b><u>
+			UPDATE 3.2.0
+			</b></u>
+			<br>
+			<ul>
+				<b>ADDITIONS</b>
+					<ul><li>Rooster now interacts with Mud, TNT and lightning.</li></ul>
+				<b>MODIFICATIONS</b>
+					<ul><li>Game over screen fixed.</li></ul>
+				<b>MISC.</b>
+					<ul><li>Rooster appears correctly on other screens.</li></ul>
+					<ul><li>bug with TNT not dissapearing in both worlds.</li></ul>
+				<b>TO DO</b>
+				<ul><li>Add coin interaction with Roosters.</li></ul>
+				<ul><li>Refine code that supports multiple connections (more than two).</li></ul>
+			</ul>
+            </p>
+			<p><b><u>
+			UPDATE 3.1.0
+			</b></u>
+			<br>
+			<ul>
+				<b>ADDITIONS</b>
+					<ul><li>Added Coin objects.</li></ul>
+					<ul><li>Rooster has 3 Lives.</li></ul>
+					<ul><li>Added coins and Lives in the HUD.</li></ul>
+					<ul><li>interactive objects now dissapear on touch.</li></ul>
+					<ul><li>Game is over when the Rooster falls.</li></ul>
+					<ul><li>Added boundary layer to Tiled Map.</li></ul>
+				<b>TO DO</b>
+					<ul><li>TiledMap is yet to be updated.</li></ul>
+			</ul>
+            </p>
+		  <p><b><u>
+			UPDATE 3.0.0
+			</b></u>
+			<br>
+			<ul>
+				<b>ADDITIONS</b>
+					<ul><li>Client can now control their own Rooster.</li></ul>
+					<ul><li>Fully functional 2 player multiplayer.</li></ul>
+					<ul><li>A client is assigned a UID that tracks their connection (IO).</li></ul>
+					<ul><li>The gamecam will follow the Rooster with the associated client's UID.</li></ul>
+					<ul><li>.</li></ul>
+				<b>MODIFICATIONS</b>
+					<ul><li>Bugs with the second client interacting with objects.</li></ul>
+					<ul><li>Bugs with game over screen.</li></ul>
+				<b>TO DO</b>
+					<ul><li>refine code that supports multiple connections.</li></ul>
+					<ul><li>flexibility in game choice, multiplayer, singleplayer, practice.</li></ul>
+			</ul>
+            </p>
+		  <p><b><u>
+			UPDATE 2.5.0
+			</b></u>
+			<br>
+			<ul>
+				<b>ADDITIONS</b>
+					<ul><li>Scuffed MainMenuScreen, takes in IP and name.</li></ul>
+					<ul><li>Port is static and will remain at port <mark>54555</mark>.</li></ul>
+				<b>MODIFICATIONS</b>
+					<ul><li>MainGame method updated.</li></ul>
+			</ul>
+            </p>
+		  <p><b><u>
+			UPDATE 2.4.2
+			</b></u>
+			<br>
+			<ul>
+				<b> MISC.</b>
+					<ul><li>Configured height and width,To set users window size when program is ran.</li></ul>
+					<ul><li>Config resizable added to prevent users from, being able to change screen size.</li></ul>
+			</ul>
+            </p>
+		  <p><b><u>
+			UPDATE 2.4.1
+			</b></u>
+			<br>
+			<ul>
+				<b>ADDITIONS</b>
+					<ul><li>Active and Inactive buttons added.To load each respective button texture on Main menu screen.</code></li></ul>
+					<ul><li>Render method to create mainMenuScreen with buttons. Visible when game is loaded.</li></ul>
+			</ul>
+            </p>
+		  <p><b><u>
+			UPDATE 2.4.0
+			</b></u>
+			<br>
+			<ul>
+				<b>ADDITIONS</b>
+					<ul><li>Height and width dimensions added to Exit and Play button.</code></li></ul>
+					<ul><li>Added Y position value to the Exit and Play button.</code></li></ul>
+					<ul><li>Field game added.</li></ul>
+				<b>MODIFICATIONS</b>
+					<ul><li>Changed setScreen field value to MainMenuScreen from PlayScreen to display MainMenuScreen on game is ran.</li></ul>
+			</ul>
+            </p>
+		  <p><b><u>
+			UPDATE 2.3.0 - 26.11.2020 
+			</b></u>
+			<br>
+			<ul>
+				<b>ADDITIONS</b>
+					<ul><li>Client is able to connect to the server, can control 1 rooster.</li></ul>
+					<ul><li>2 power up object added. Lightning and Mud.</li></ul>
+					<ul><li>Rooster has two states a RUNNING FAST and a RUNNING SLOW.</li></ul>
+					<ul><li>Menu screen has been added with PLAY and EXIT option.</li></ul>
+				<b>REMOVALS</b>
+					<ul><li>player2 variable is removed from PlayScreen class.</li></ul>
+				<b> MISC.</b>
+					<ul><li>To do: Assign clients their own rooster on the same playscreen.</li></ul>
+			</ul>
+            </p>
+		  
+		  <p><b><u>
+			UPDATE 2.2.0 - 23.11.2020 
+			</b></u>
+			<br>
+			<ul>
+				<b>ADDITIONS</b>
+					<ul><li>Rooster has a <mark>DEAD</mark> state</li></ul>
+					<ul><li>Animations before game starts.</li></ul>
+					<ul><li>TO WEBSITE- a development blog and a gallery.</li></ul>
+					<ul><li>Download button and clickable links on website.</li></ul>
+				<b>REMOVALS</b>
+					<ul><li>removed Sensor on Rooster's beak.</li></ul>
+					<ul><li>romoved NavBar from website and text.</li></ul>
+				<b>MODIFICATIONS</b>
+					<ul><li>Collisions with interactive objects is now detected correctly.</li></ul>
+					<ul><li>complete revamp of website, adding in footer, header, navbar and social links.</li></ul>
+				<b> MISC.</b>
+					<ul><li>Improved design and code readability.</li></ul>
+			</ul>
+            </p>
+			<p><b><u>
+			UPDATE 2.1.1 - 22.11.2020 
+			</b></u>
+			<br>
+			<ul>
+				<b>ADDITIONS</b>
+					<ul><li>posX to keep track of rooster's position on screen.</li></ul>
+					<ul><li>Sensor added to Roosters beak to detect collision.</li></ul>
+					<ul><li>Method to detect collisions.</li></ul>
+					<ul><li>WorldContactListener class added. called when  2 fixtures colide.</li></ul>
+				<b>REMOVALS</b>
+					<ul><li>removal of a method that sets inital position: not required.</li></ul>
+				<b>MODIFICATIONS</b>
+					<ul><li>Initial position value changed to 20</li></ul>
+					<ul><li>change of Rooster method: constructor takes new int parameter for the initial position.</li></ul>
+				<b> MISC.</b>
+					<ul><li>Method that controls On Beak Hit take parameter (screen), retrieved through another method.</li></ul>
+			</ul>
+            </p>
+			<p><b><u>
+			UPDATE 2.1.0 - 29.10.2020 - THE HACK
+			</b></u>
+			<br>
+			<ul>
+				<b> MISC.</b>
+					<ul><li>First working version of the game.(BETA)</li></ul>
+					<ul><li>Inital setups of software with sprite sheet and codes to produce a beta version.</li></ul>
+			</ul>
+            </p>
+			<p><b><u>
+			UPDATE 2.0.0 - 23.11.2020 - THE WEBSITE
+			</b></u>
+			<br>
+			<ul>
+				<b>ADDITIONS</b>
+					<ul><li>publicly accessible website containing a landing page.</li></ul>
+				<b> MISC.</b>
+					<ul><li>basic information about the software and to be aimed at target users.</li></ul>
+			</ul>
+            </p>
+		  <p><b><u>
+			UPDATE 1.2.0 - 22.10.2020 - POWERPOINT / PITCH
+			</b></u>
+			<br>
+			<ul>
+				<b> MISC.</b>
+					<ul><li>Video pitch of the game that describes the software we intend to produce. </li></ul>
+					<ul><li>Creating a powerpoint presentation on our game ideas, to be used to pitch game.</li></ul>
+					
+			</ul>
+            </p>
+		  
+		  <p><b><u>
+			UPDATE 1.1.0 - 15.10.2020 DESIGNED ALLIANCE / GAME IDEAS SELECTION
+			</b></u>
+			<br>
+			<ul>
+				<b> MISC.</b>
+					<ul><li>Discussion about Atmosphere, Conflicts and Commitments to the team.</li></ul>
+					<ul><li>Collectively decision on having group atmosphere to be professional, calm and interactive.</li></ul>
+					<ul><li>Plan to deal with conflict by putting into perspective everyones view, in order to make team decisions.</li></ul>
+					<ul><li>Each members makes and shares a Commitment to the team.</li></ul>
+					<ul><li>input of Game idea from each team members.</li></ul>
+			</ul>
+            </p>
+            <p><b><u>
+			UPDATE 1.0.0 - 14.10.2020 INTRODUCTION
+			</b></u>
+			<br>
+			<ul>
+				
+				<b> MISC.</b>
+					<ul><li>Formation of the group.</li></ul>
+					<ul><li>Inroduction to assignment requirments.</li></ul>
+			</ul>
+            </p>
+			
+			
+			
+			
+          </div>
+		  
+          <div class="col-md-4" >
+            <div>
+                <img src="assets/roost.png" class="devimg" width="100%"/>
+            </div>
+            <div>
+                <img src="assets/tnt.png" class="devimg" width="100%"/>
+            </div>
+			<div>
+                <img src="assets/plane.png"class="devimg" width="100%"/>
+            </div>
+			<div>
+                <img src="assets/tractor.png"class="devimg" width="100%"/>
+            </div>
+			<div>
+                <img src="assets/light.png"class="devimg" width="100%"/>
+            </div>
+			<div>
+                <img src="assets/flower.png"class="devimg" width="100%"/>
+            </div>
+          </div>
+        </div>
+       
+
+    </div>
+
+    <div class="container-fluid bg-grey footer">
+      <div class="row" style="padding : 10px;">
+          
+          <div class="col-sm-2"></div>
+          
+          <div class="col-sm-4" style=" text-align: center; ">
+                <h2>CONTACT</h2>
+                <hr style="
+                    height: 3px;
+                    background-color: #f4b41a;
+                    border: none;
+                    width: 30%;
+                  ">
+                <p>
+                  <a href="https://www2.aston.ac.uk/about/directions""fas fa-map-marker-alt" > ASTON UNIVERSITY,
+                   ASTON ST, BIRMINGHAM <br>B4 7ET</a>
+                </p>
+                <p>
+                  <a href="tel:+44 (0)020-845-9889" "fas fa-phone"> +44 0208459889</a>
+                </p>
+                <p>
+                  <a href="mailto:roostergame@gmail.com" "fas fa-envelope">roostergame@gmail.com</a>
+                  
+                </p>
+            </div>
+
+          <div class="col-sm-2"></div>
+
+
+          <div class="col-sm-2" style=" text-align: center; margin-top:30px ">
+              <div class="row text-align">
+                <div class="col-sm-12 form-group">
+                  <h2>FOLLOW US:</h2>
+                  <hr style="
+                      height: 3px;
+                      background-color: #f4b41a;
+                      border: none;
+                      width: 60%;
+                    ">
+                  <div class="icons">
+                      
+                        <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook-square"></a>
+                        <a href="https://www.twitter.com" target="_blank" class="fab fa-twitter-square"></a>
+                        <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram"></a>
+                        <a href="https://www.google.com" target="_blank" class="fab fa-google-plus-square"></a>
+                    </div>
+                  <p>&copy 2020 All Rights Reserved</p>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-sm-2"></div>
+        
+        
+      </div>
+    </div>
+</body>
