@@ -7,7 +7,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="icon" type="img/jpg" href="assets/logoroost.png"/>
+	<link rel="icon" type="img/jpg" href="assets/logoroost.png"/>
+	<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
     <!-- Add icon library -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
@@ -23,8 +25,8 @@
             <h5 class="my-0 mr-md-auto font-weight-normal">
                 <a href="index.html"><img src="assets/logoRoosterRunNew.png" alt=""></a>
             </h5>
-            <nav class="my-2 my-md-0 mr-md-3 ">
-              <a class="p-2 text-decoration-none" href="index.html">Home</a>
+            <nav class="font my-2 my-md-0 mr-md-3 ">
+			  <a class="p-2 text-decoration-none" href="index.html">Home</a>
               <a class="p-2 btn btn-warning" href="development.html">Development Blog</a>
               <a class="p-2 text-decoration-none" href="gallery.html">Gallery</a>
               <a class="p-2 text-decoration-none download-button" href="download.html">Download</a>
@@ -41,7 +43,74 @@
 		<p>ROOSTER RUN is a fun multiplayer game, soon available on IOS, Andriod and Windows.</p>
         <div class="row">
           <div class="col-md-8">
-		  <p><b><u>
+			<p><b><u>
+				UPDATE 4.3.0
+				</b></u>
+				<br>
+				<ul>
+					<b>MISC.</b>
+						<ul><li>power-ups and Debuffs now only effect the Rooster that hits them..</li></ul>
+						<ul><li>Power-ups and Debuffs now limited, the Rooster reverts to normal speed.</li></ul>
+						<ul><ul><li>Not time based until after Rooster's X position is the exact same for all clients.</li></ul></ul>
+					<b>MISC.</b>
+						<ul><li>Position X varies through the sliding ice problem (appleLeanarImpulse must be limited).</li></ul>
+				</ul>
+			</p>
+			<p><b><u>
+				UPDATE 4.2.0
+				</b></u>
+				<br>
+				<ul>
+					<b>ADDITIONS</b>
+						<ul><li>Created new Main Menu screen.</li></ul>
+						<ul><li>Updated multiplayer menu screen (improved graphics, added buttons "continue" and "go back").</li></ul>
+						<ul><li>Explosion animation triggered when player hits a bomb.</li></ul>
+					<b>MISC.</b>
+						<ul><li>Impluse appled to Rooster when UP key is pressed.</li></ul>
+					<b>TO DO</b>
+						<ul><li>Make Tutorial button in Main Menu, opens a youtube link to tutorial video.</li></ul>
+						<ul><li>Change the background of the Main Menu screen.</li></ul>
+						<ul><li>Improve Appearance of the multiplayer manu screen.</li></ul>
+						<ul><li>Allow users to play in single mode.</li></ul>
+				</ul>
+			</p>
+			<p><b><u>
+				UPDATE 4.1.1
+				</b></u>
+				<br>
+				<ul>
+					<b>MODIFICATIONS</b>
+						<ul><li>Revised object collisonlogic ensures greater accuracy of information sent to clients.</li></ul>
+						<ul><li>Centralised shared variables such as Rooster. State now stored in the server.</li></ul>
+						<ul><li>WorldContactListener now directs variable changes to MPServer.</li></ul>
+					<b>MISC.</b>
+						<ul><li>Randomness occurs within movement.</li></ul>
+						<ul><li>Bugs when both Roosters are not rendered within the OrthgonalTiledMapRender view.</li></ul>
+						<ul><li></li></ul>
+					<b>TO DO</b>
+						<ul><li>Render entire map is possible.</li></ul>
+						<ul><li>Add a centralized timer for updates within Rooster.state</li></ul>
+						<ul><li>Position X stored of all ROosters on the server.</li></ul>
+				</ul>
+			</p>
+			<p><b><u>
+				UPDATE 4.1.0
+				</b></u>
+				<br>
+				<ul>
+					<b>ADDITIONS</b>
+						<ul><li>Created a HUD for rooster 2.</li></ul>
+					<b>MODIFICATIONS</b>
+						<ul><li>Changed coins label to coin image.</li></ul>
+						<ul><li>Changed hearts labels to hearts images.</li></ul>
+					<b>TO DO</b>
+						<ul><li>Fix HUD layout for both screens.</li></ul>
+						<ul><li>Player interaction logic to be be fixed.</li></ul>
+						<ul><li>Represent number of lives as number of hearts.</li></ul>
+				</ul>
+			</p>
+			
+			<p><b><u>
 			UPDATE 4.0.0
 			</b></u>
 			<br>
@@ -373,7 +442,8 @@
                         <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram"></a>
                         <a href="https://www.google.com" target="_blank" class="fab fa-google-plus-square"></a>
                     </div>
-                  <p>&copy 2020 All Rights Reserved</p>
+				  <p>&copy 2020 All Rights Reserved</p>
+				  <p>TEAM 13</p>
                 </div>
               </div>
           </div>
