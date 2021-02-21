@@ -19,7 +19,10 @@
 </head>
 
 <body>
-<div class="myheader" style="background-color: red !important;">
+
+<!--the NAVBAR STARTS here-->
+<!--
+<div class="myheader" style="background-color: red !important;  margin-top:-20px">
         <div class="container d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white " style="background-color: red !important;">
             <h5 class="my-0 mr-md-auto font-weight-normal">
                 <a href="index.html"><img src="assets/logoRoosterRunNew.png" alt=""></a>
@@ -28,142 +31,162 @@
               <a class="p-2 text-decoration-none" href="index.html">Home</a>
               <a class="p-2 text-decoration-none" href="development.html">Development Blog</a>
               <a class="p-2 btn btn-warning" href="gallery.html">Gallery</a>
-              <a class="p-2 text-decoration-none download-button" href="download.html">Download</a>
+              <a class="p-2 text-decoration-none" href="download.html">Download</a>
             </nav>
           </div>
+    </div>-->
+<!--the NAVBAR ENDS here-->
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark font" style="background-color: red !important">
+  
+	<div class="container">
+		<a href="index.html"><img src="assets/logoRoosterRunNew.png" alt=""></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav ml-auto">
+				<li class=" ">
+					<a class="nav-link" href="index.html">HOME <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="development.html">Development Blog</a>
+				</li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="myteam.html">Meet the team</a>
+        </li>
+				
+				<li class="nav-item">
+					<a class="btn btn-warning" href="gallery.html">Gallery</a>
+				</li>
+                <li class="nav-item">
+					<a class="nav-link" href="download.html">Download</a>
+				</li>
+				
+      
+			</ul>
+    
+				
+		</div>
+  </div>
+ 
+</nav>
+
+<body style=" overflow-y: scroll;">
+
+  
+  <div class="">
+    <div class=" " style=" margin-top:5.65em;" id="section4">
+  
+    <div class="mySlides fade">
+      <div class="numbertext ">1 / 6</div>
+      <img src="assets/screen.png" style="width:100%; height:84.5%">
+      
     </div>
-<div class="container mb-12"  style="margin-top : 140px  !important;">
-<h2>Games Gallery </h2>
 
-<div class="slideshow-container">
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="assets/backlanding.png" style=" width:100%; height:84.5%">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext"> 3 / 6</div>
+    <img src="assets/play1.png" style="width:100%; height:84.5%">
+    
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext"> 4 / 6 </div>
+    <img src="assets/play2.png" style="width:100%; height:84.5%">
+    
+  </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">1 / 6</div>
-  <img src="assets/homescreen.png" style="width:100%;height:70%">
-  <div class="text">Main Menu</div>
-</div>
+  <div class="mySlides fade">
+    <div class="numbertext"> 5 / 6</div>
+    <img src="assets/play3.png" style="width:100%; height:84.5%">
+    
+  </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">2 / 6</div>
-  <img src="assets/screen.png" style="width:100%;height:70%">
-  <div class="text">Home Screen</div>
-</div>
+  <div class="mySlides fade">
+    <div class="numbertext"> 6 / 6</div>
+    <img src="assets/gameover.png" style="width:100%; height:84.5%">
+    
+  </div>
+  
+  </div>
+  </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">3 / 6</div>
-  <img src="assets/play1.png" style="width:100%;height:70%">
-  <div class="text">Game World</div>
-</div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span>
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span>  
+  </div>
 
-<div class="mySlides fade">
-  <div class="numbertext">4 / 6</div>
-  <img src="assets/play2.png" style="width:100%;height:70%">
-  <div class="text">Game Map</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">5 / 6</div>
-  <img src="assets/play3.png" style="width:100%;height:70%">
-  <div class="text">Game Play</div>
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">6 / 6</div>
-  <img src="assets/gameover.png" style="width:100%;height:70%">
-  <div class="text">Game Over</div>
-</div>
-</div>
-<br>
-
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span>  
-  <span class="dot"></span> 
-</div>
-</div>
-
-<script>
-var slideIndex = 0;
-showSlides();
-
-function showSlides() {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";  
-  }
-  slideIndex++;
-  if (slideIndex > slides.length) {slideIndex = 1}    
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
-}
-</script>
-
+  <script>
+    var slideIndex = 0;
+    showSlides();
+    
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+    </script>
 </body>
 
-    <div class="container-fluid bg-grey footer" style="margin-top:20px">
-      <div class="row" style="padding : 10px;">
+<!--the Footer starts here-->
+    <div class="container-fluid bg-grey footer fixed-bottom" >
+      <div class="row">
           
-          <div class="col-sm-2"></div>
+          <div class="col-md-2"></div>
           
-          <div class="col-sm-4" style=" text-align: center; ">
-                <h2>CONTACT</h2>
-                <hr style="
-                    height: 3px;
-                    background-color: #f4b41a;
-                    border: none;
-                    width: 30%;
-					">
-                <p>
-                  <a href= "https://www2.aston.ac.uk/about/directions""fas fa-map-marker-alt" > ASTON UNIVERSITY,
-                   ASTON ST, BIRMINGHAM<br> B4 7ET</a>
-                </p>
-                <p>
-                  <a href="tel:+44 (0)020-845-9889" "fas fa-phone"> +44 0208459889</a>
-                </p>
-                <p>
-                  <a href="mailto:RoosterRunContact@gmail.com" "fas fa-envelope">RoosterRunContact@gmail.com</a>
-                  
-                </p>
-            </div>
+          
 
-          <div class="col-sm-2"></div>
+        
 
 
-          <div class="col-sm-2" style=" text-align:center; margin-top:30px">
+          <div class="col-md-12" style=" text-align:center; margin-top:5px">
               <div class="row text-align">
                 <div class="col-sm-12 form-group">
-                  <h2>FOLLOW US:</h2>
-                  <hr style="
-                      height: 3px;
-                      background-color: #f4b41a;
-                      border: none;
-                      width: 60%;
-                    ">
+                  <h5>ROOSTER RUN</h5>
+                    <!--
                   <div class="icons">
                       
                         <a href="https://www.facebook.com" target="_blank" class="fab fa-facebook-square"></a>
                         <a href="https://www.twitter.com" target="_blank" class="fab fa-twitter-square"></a>
                         <a href="https://www.instagram.com" target="_blank" class="fab fa-instagram"></a>
                         <a href="https://www.google.com" target="_blank" class="fab fa-google-plus-square"></a>
-                    </div>
-                  <p>&copy 2020 All Rights Reserved</p>
-                  <p>TEAM 13</p>
+                    </div>-->
+                  &copy 2020 All Rights Reserved. TEAM 13
+                  
                 </div>
               </div>
           </div>
 
-          <div class="col-sm-2"></div>
+
         
         
       </div>
     </div>
+
+<!--the Footer ENDS here-->
 </body>
