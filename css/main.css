@@ -663,50 +663,43 @@ input[type="radio"] {
 }
 
 #slide1 {
-  background-image: url(../assets/map1.png);
+  background-image: url(../assets/hard1.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #slide2 {
-  background-image: url(../assets/map2.png);
+  background-image: url(../assets/hard2.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #slide3 {
-  background-image: url(../assets/map4.png);
+  background-image: url(../assets/beg1.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #slide4 {
-  background-image: url(../assets/map3.png);
-  background-position: center center;
+  background-image: url(../assets/beg2.png);
+  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #slide5 {
-  background-image: url(../assets/map5.png);
+  background-image: url(../assets/med1.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (min-width: 1600px) {
   #slider {
     width: 100%;
     height: 30%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  #slider {
-    width: 100%;
-    height: 25%;
   }
 }
