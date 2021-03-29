@@ -98,7 +98,7 @@
             <a class="nav-link aone" href="gallery.html">Gallery</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link aone" href="#section3">Download</a>
+            <a class="nav-link aone" href="download.html">Download</a>
           </li>
         </ul>
       </div>
@@ -355,6 +355,13 @@
                   alt="Step 4"
                 />
               </div>
+              <div class="carousel-item">
+                <img
+                  class="d-block w-100 h-40"
+                  src="assets/tab.png"
+                  alt="Step "
+                />
+              </div>
             </div>
             <a
               class="carousel-control-prev"
@@ -385,6 +392,8 @@
           <p>2. Click on CREATE</p>
           <p>3. Enter your name, choose your map and click on START</p>
           <p>4. Share the game code with your friends, wait for them to connect and hit PLAY</p>
+          <p>5.Click TAB to view your opponents progress</p>
+
         </div>
         <div class="col-sm-12 col-md-12 col-lg-6">
           <h4 class="free" style="text-align: center;">To Join a lobby</h4>
@@ -515,7 +524,7 @@
   <!--the download card code starts here-->
   <span class="anchor" id="section3"></span>
   <div id="downloads-page" class="container downloads-section mt-5 mb-5">
-    <div class="text-center" style="margin-top: 3%" ;>
+    <div class="text-center">
       <h1
         class="cold-md-6 border1"
         style="
@@ -573,6 +582,25 @@
       </div>
     </div>
   </div>
+  <a id="back-to-top" href="#" class="btn btn-light btn-lg back-to-top" role="button"><i class="fas fa-chevron-up"></i></a>
+ <script>
+  $(document).ready(function(){
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 50) {
+          $('#back-to-top').fadeIn();
+        } else {
+          $('#back-to-top').fadeOut();
+        }
+      });
+      // scroll body to 0px on click
+      $('#back-to-top').click(function () {
+        $('body,html').animate({
+          scrollTop: 0
+        }, 400);
+        return false;
+      });
+  });
+  </script>
   <!--the download cards code ends here-->
 
   <!--the footer STARTS here-->

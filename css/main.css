@@ -69,12 +69,8 @@ body {
 }
 
 .centerdownload {
-  margin: 0;
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  display: block;
+  margin: 0 auto;
 }
 
 .nav {
@@ -110,6 +106,13 @@ body {
 
 .free {
   color: red;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 72px;
+  right: 25px;
+  display: none;
 }
 
 .computer {
