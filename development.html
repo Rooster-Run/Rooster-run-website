@@ -113,7 +113,42 @@
 						</p>
 					</div>
 					-->
-					<button type="button" class="collapsible"><b>UPDATE 5.2.0 - 26.03.2021</b></button>
+					<button type="button" class="collapsible"><b>UPDATE 5.6.0 - 28.03.2021</b></button>
+					<div class="content ">
+						<p>
+							<ul>
+								<b>MODIFICATIONS.</b>
+									<ul><li>Bug fixes.</li></ul>
+									<ul><li>Major refactoring.</li></ul>
+									<ul><li>Solved bug on server-side, due to which the server was crashing when a player left a session and then closed the window.</li></ul>
+							
+							</ul>
+
+						</p>
+					</div>
+
+					<button type="button" class="collapsible"><b>UPDATE 5.5.0 - 27.03.2021</b></button>
+					<div class="content ">
+						<p>
+							<ul>
+								<b>MODIFICATIONS.</b>
+									<ul><li>Major refactoring & updates.</li></ul>
+									<ul><li>Fixed errors on server-side causing NullPointerException and ConcurrentModificationException.</li></ul>
+									<ul><li>LobbyScreen now lets another player become the host if the host leaves the session.</li></ul>
+									<ul><li>Updated the LobbyScreen to correctly render the current players after removing one player.</li></ul>
+									<ul><li>Fixed bug with multiple tokens being overlapped.</li></ul>
+									<ul><li>The player now only freezes if it not resuscitating.</li></ul>
+									<ul><li>Added some checks to ensure that the correct screen is rendered when the players try to create/join a game session.</li></ul>
+									<b>ADDITIONS</b>
+									<ul><li>New SessionFull screen, shown when a session has already 4 players inside.</li></ul>
+							
+							</ul>
+
+						</p>
+					</div>
+
+
+					<button type="button" class="collapsible"><b>UPDATE 5.4.0 - 26.03.2021</b></button>
 					<div class="content ">
 						<p>
 							<ul>
@@ -123,6 +158,12 @@
 									<ul><li>All players waiting in the lobby start the game at the same time.</li></ul>
 									<ul><li>Players position is sent and updated ever 0.3 seconds</li></ul>
 									<ul><li>Progress bar works as intended</li></ul>
+									<ul><li>Added new powerup 'IceCube' that freezes all opponents for 5 secs.</li></ul>
+									<ul><li>Added GameInProgressScreen to notify users if the game session they want to join has already started.</li></ul>
+									<ul><li>Maps are now picked through the MapManager</li></ul>
+									<b>MODIFICATIONS</b>
+									<ul><li>new class for Maps</li></ul>
+									<ul><li>Fixed issue with the error screen being shown too late</li></ul>
 								<b>TO DO</b>
 									<ul><li>Progress bar must clearly identify the current player.</li></ul>
 
@@ -132,21 +173,59 @@
 						</p>
 					</div>
 
-					<button type="button" class="collapsible"><b>UPDATE 5.1.0 - 23.03.2021</b></button>
+					<button type="button" class="collapsible"><b>UPDATE 5.3.0 - 24.03.2021</b></button>
 					<div class="content ">
 						<p>
 							<ul>
+								<b>ADDITIONS.</b>
+									<ul><li>Created a new background image for the "game won" screen</li></ul>
+									<ul><li>Updated the Game Finished screen to show the winner's name</li></ul>
+									<ul><li>Improvements and bug fixes.</li></ul>
+									<ul><li>Players position is sent and updated ever 0.3 seconds</li></ul>
+									<ul><li>Progress bar works as intended</li></ul>
+									<ul><li>Added a new state for revive.</li></ul>
+									<ul><li>Implemented functionality for coins (used to revive the player if it falls and has >=3 coins).</li></ul>
+									<ul><li>New textures for rooster's dead state.</li></ul>
+									<ul><li>Collision disabled during resuscitation.</li></ul>
+								<b>MODIFICATIONS</b>
+									<ul><li>Changed the game camera to stay within the map boundaries (i.e. the black edges are not shown anymore).</li></ul>
+
+							
+							</ul>
+
+						</p>
+					</div>
+					<button type="button" class="collapsible"><b>UPDATE 5.2.0 - 23.03.2021</b></button>
+					<div class="content ">
+						<p>
+							<ul>
+								<b>ADDITIONS.</b>
+								<ul><li>Added true-type fonts</li></ul>
+								<ul><li>Added a loading screen when player starts the game.</li></ul>
+								<ul><li>Added a progress bar( replaces the HUD).</li></ul>
+
 								<b>MISC.</b>
 									<ul><li>Created Google server with working ports.</li></ul>
 									<ul><li>Game Over screen updated</li></ul>
-								<b>ADDITIONS.</b>
-									<ul><li>Added a loading screen when player starts the game.</li></ul>
-									<ul><li>Added a progress bar( replaces the HUD).</li></ul>
 								<b>MODIFICATIONS</b>
 									<ul><li>Mutable sound and music functionality.</li></ul>
+									<ul><li>Changed fonts on all screens to TTF fonts</li></ul>
 								<b>TO DO</b>
 									<ul><li>Loading Screen must redirect to the player Screen at the same time for all players.</li></ul>
 									<ul><li>Progress bar should support multiplayer mode.</li></ul>
+							
+							</ul>
+
+						</p>
+					</div>
+
+					<button type="button" class="collapsible"><b>UPDATE 5.1.0 - 22.03.2021</b></button>
+					<div class="content ">
+						<p>
+							<ul>
+								<b>ADDITIONS.</b>
+								<ul><li>Configured the server to notify players when they entered an incorrect token</li></ul>
+								<ul><li>Fixed bug with server being closed now when a game session is completed</li></ul>
 							
 							</ul>
 
@@ -157,6 +236,10 @@
 					<div class="content ">
 						<p>
 							<ul>
+
+								<b>MODIFICATIONS</b>
+								<ul><li>Fixed lightning and mud powerups in single-player mode</li></ul>
+								<ul><li>Improvements to audio</li></ul>
 								<b>REMOVALS.</b>
 									<ul><li>Removed MovementPacket for all players.</li></ul>
 									<ul><li>One class represent movements and handles the ClientID data within the packet.</li></ul>
@@ -177,6 +260,9 @@
 								<b>ADDITIONS.</b>
 									<ul><li>Added two new menu screens for creating/joining the game.</li></ul>
 									<ul><li>Options to choose map.</li></ul>
+									<ul><li>Powerups/downs working again.</li></ul>
+									<ul><li>Completed sessions are now removed on the server-side</li></ul>
+									<ul><li>minor bug fixes.</li></ul>
 
 									<b>MODIFICATIONS.</b>
 									<ul><li>bug fix when colliding with bombs.</li></ul>
@@ -190,10 +276,15 @@
 					</div>
 
 
-					<button type="button" class="collapsible"><b>UPDATE 4.5.0 - 15.03.2021</b></button>
+					<button type="button" class="collapsible"><b>UPDATE 4.5.0 - 17.03.2021</b></button>
 					<div class="content ">
 						<p>
 							<ul>
+								<b>ADDITIONS.</b>
+									<ul><li>new "Tab feature": players can now press TAB while playing to view individual progress bars for each player, along with the coins collected and the remaining lives.</li></ul>
+									<ul><li>flying animation for the rooster</li></ul>
+									<ul><li></li></ul>
+									<ul><li></li></ul>
 								<b>MODIFICATIONS.</b>
 									<ul><li>Made hame into one executable JAR.</li></ul>
 									<ul><li>Once the player dies, their score is shown.</li></ul>
@@ -222,6 +313,9 @@
 									<ul><li>Added sound for Bomb hit.</li></ul>
 									<ul><li>Added sound for lightening hit.</li></ul>
 									<ul><li>Added sound for end of game win sound.</li></ul>
+									<ul><li>In game sounds volume control with buttons (A and D).</li></ul>
+									<ul><li>Updated SoundManager with loop methods for music.</li></ul>
+									<ul><li>Added in game soundtrack</li></ul>
 								<b>TO DO.</b>
 									<ul><li>Add Wing sound each time bird flaps wings.</li></ul>
 									<ul><li>Represent lives as number of hearts.</li></ul>
@@ -233,7 +327,7 @@
 						</p>
 					</div>
 
-					<button type="button" class="collapsible"><b>UPDATE 4.3.1 - 11.03.2021</b></button>
+					<button type="button" class="collapsible"><b>UPDATE 4.3.1 - 8.03.2021</b></button>
 					<div class="content ">
   						<p>
 							<ul>
